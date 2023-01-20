@@ -4,8 +4,7 @@ const adviceId = document.querySelector(".adviceId")
 const btn = document.querySelector(".btn")
 
 async function getAdvice() {
-    const randomInt = Math.floor(Math.random() * 250)
-    console.log(randomInt)
+    const randomInt = Math.floor(Math.random() * 250) 
     try {
         const response = await fetch(`https://api.adviceslip.com/advice/${randomInt}`)
         const advice = await response.json()
